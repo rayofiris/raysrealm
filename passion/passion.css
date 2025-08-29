@@ -1,0 +1,122 @@
+body{
+background-image: url(img/temple.jpg);
+background-size: 100%;
+}
+
+
+@font-face {                  
+font-family: 'UFO!';
+src: url(https://humantooth.neocities.org/fonts/UFO!-Mono.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+@font-face {                  
+font-family: 'FT88-Italic';
+src: url(https://humantooth.neocities.org/fonts/FT88-Italic.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+.headerbox{
+background-image: url(img/textbox.png);
+width: 654px;
+height: 134px;
+transform: translate(-10px, -20px);
+padding: 62px 0px 0px 60px;
+float: left;
+}
+
+.header{
+    width: 554px;
+    color: #043b34;
+}
+
+h1 {
+font-family: 'UFO!';
+font-size: 36px;
+line-height: 46px;
+}
+
+.ft88{
+    font-family: 'FT88-Italic';
+    font-size: 20px;
+}
+
+.rightalign {
+    float: right;
+}
+
+.subheader {
+    padding: 35px 20px 20px 0px;
+    text-align: center;
+    width: 500px;
+    margin: 0px 0px 20px 0px;
+}
+
+.wiistamp {
+    float:left;
+    padding: 20px 0px 0px 0px;
+    width: 75px;
+}
+
+.nintendostamp {
+    float: right;
+    padding: 20px 0px 0px 0px;
+    width: 75px;
+}
+
+.vine {
+    width: 510px;
+    opacity: 75%;
+    float: center;
+    transform: translate(-10px, 0px);
+}
+
+
+@font-face {                  
+font-family: 'DepartureMono';
+src: url(https://humantooth.neocities.org/fonts/DepartureMono.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+p{
+    font-family: 'DepartureMono';
+    font-size: 14px;
+}
+.board1{
+border: 4px solid #043b34;
+
+background-image: url(img/stonevine.jpg);
+background-size: 20%;
+background-repeat: repeat;
+width: 40%;
+margin: 0px 0px 0px 40px;
+float: left;
+padding: 20px;
+}
+
+.board2
+{
+border: 4px solid #043b34;
+background-image: url(img/stonevine.jpg);
+background-size: 20%;
+background-repeat: repeat;
+width: 40%;
+margin: 0px 20px 0px 0px;
+float: right;
+padding: 20px;
+}
+
+.half{
+    margin-top: 100px;
+    margin-bottom: 160px;
+}
+
+.half2{
+    margin-top: 20px;
+}
+
+.half3 {
+    margin-top: -130px;
+}

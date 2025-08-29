@@ -1,0 +1,57 @@
+body {
+    background-image: url(img/nice-snow.png);
+    background-size: 10%;
+    text-align: justify; 
+    font-family: cursive;
+}
+
+.header {
+    background-color:aqua;
+    color:blue;
+    text-align: center;
+    border: 4px solid midnightblue;
+}
+
+.border {
+    background-image: url(img/blueblock.png);
+    background-size: 110px;
+    background-repeat: repeat-x;
+    height: 110px;
+}
+.rectangle {
+    border: 4px dashed aqua;
+    text-align: center;
+}
+
+.blue{
+    background-color: aqua;
+    color: blue;
+    border: 4px solid midnightblue;
+    width: 20px;
+    padding: 4px 0px;
+    margin: 10px auto; 
+}
+
+.blue:hover {
+    background-color: blue;
+}
+
+.not{
+    text-decoration: line-through;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+a{
+    color:aqua
+}
+
+a:hover {
+    background-color: aqua;
+    color: blue;
+    border: 4px solid midnightblue;
+    width: 40px;
+    padding: 0px 4px;
+}
