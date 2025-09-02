@@ -16,25 +16,32 @@ src: url(https://humantooth.neocities.org/fonts/FT88-Italic.woff) format('woff')
 font-weight: normal;
 font-style: normal;
 }
+@font-face {                  
+font-family: 'Canarina';
+src: url(https://humantooth.neocities.org/fonts/Canarina.woff2) format('woff2');
+font-weight: normal;
+font-style: normal;
+} 
 
 .headerbox{
 background-image: url(img/textbox.png);
-width: 654px;
+width: 604px;
 height: 134px;
 transform: translate(-10px, -20px);
-padding: 62px 0px 0px 60px;
+padding: 55px 0px 0px 100px;
 float: left;
 }
 
 .header{
     width: 554px;
     color: #043b34;
+    text-shadow: 1px 1px 0px #9cbba8, -1px 1px 0px #9cbba8, -1px -1px 0px #9cbba8, 1px -1px 0px #9cbba8;
 }
 
 h1 {
 font-family: 'UFO!';
 font-size: 36px;
-line-height: 46px;
+line-height: 41px;
 }
 
 .ft88{
@@ -44,6 +51,7 @@ line-height: 46px;
 
 .rightalign {
     float: right;
+    padding-right: 50px;
 }
 
 .subheader {
@@ -51,18 +59,22 @@ line-height: 46px;
     text-align: center;
     width: 500px;
     margin: 0px 0px 20px 0px;
+    color:#c8dac2;
+    text-shadow: 1px 1px 0px #043b34, -1px 1px 0px #043b34, -1px -1px 0px #043b34, 1px -1px 0px #043b34;
 }
 
 .wiistamp {
     float:left;
-    padding: 20px 0px 0px 0px;
+    padding: 15px 0px 0px 0px;
     width: 75px;
+    margin-left: 20px;
 }
 
 .nintendostamp {
     float: right;
-    padding: 20px 0px 0px 0px;
+    padding: 15px 0px 0px 0px;
     width: 75px;
+    margin-right: 20px;
 }
 
 .vine {
@@ -72,6 +84,9 @@ line-height: 46px;
     transform: translate(-10px, 0px);
 }
 
+.outline {
+     text-shadow: 1px 1px 0px #9cbba8, -1px 1px 0px #9cbba8, -1px -1px 0px #9cbba8, 1px -1px 0px #9cbba8;
+}
 
 @font-face {                  
 font-family: 'DepartureMono';
@@ -79,44 +94,94 @@ src: url(https://humantooth.neocities.org/fonts/DepartureMono.woff) format('woff
 font-weight: normal;
 font-style: normal;
 } 
+@font-face {                  
+font-family: 'unixel';
+src: url(https://humantooth.neocities.org/fonts/unixel-Regular.woff2) format('woff2');
+font-weight: normal;
+font-style: normal;
+} 
 
 p{
-    font-family: 'DepartureMono';
-    font-size: 14px;
+    font-family: 'unixel';
+    font-size: 15px;
+    
+}
+
+.ray{
+    margin-top: -11px;
+    margin-left: 115px;
+    margin-bottom: -5px;
+    font-size: 20px;
+    text-shadow: 1px 1px 0px #507e5a, -1px 1px 0px #507e5a, -1px -1px 0px #507e5a, 1px -1px 0px #507e5a;
+}
+.pbg{
+    background-color: #c8dac2;
+    padding: 20px;
+    color: #043b34;
+    border: 4px solid #8bac9f
 }
 .board1{
 border: 4px solid #043b34;
 
-background-image: url(img/stonevine.jpg);
-background-size: 20%;
+background-image: url(img/stoneugly.jpg);
+background-size: 50%;
 background-repeat: repeat;
-width: 40%;
-margin: 0px 0px 0px 40px;
+width: 42%;
 float: left;
 padding: 20px;
+position: absolute;
+left: 50px;
+top: 210px;
 }
 
 .board2
 {
 border: 4px solid #043b34;
-background-image: url(img/stonevine.jpg);
-background-size: 20%;
+background-image: url(img/stoneugly.jpg);
+background-size: 50%;
 background-repeat: repeat;
-width: 40%;
-margin: 0px 20px 0px 0px;
+width: 42%;
 float: right;
 padding: 20px;
+position: absolute;
+top: 400px;
+right: 30px;
 }
 
 .half{
-    margin-top: 100px;
-    margin-bottom: 160px;
+ top: 210px;
 }
 
 .half2{
-    margin-top: 20px;
+   top:760px;
 }
 
 .half3 {
-    margin-top: -130px;
+    top: 525px;
+}
+
+.half4{
+    top: 1240px;
+}
+
+.gallery{
+    float: right;
+    overflow: scroll;
+    top: 1460px;
+    background-color: #c8dac2;
+    padding: 20px;
+    color: #043b34;
+    border: 4px solid #8bac9f;
+    width: 42%;
+    right: 30px;
+    position:absolute;
+    height: 300px;
+}
+
+.galleryimg {
+    width: 500px;
+}
+
+.galleryimg2 {
+    height: 200px;
 }
