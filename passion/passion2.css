@@ -167,7 +167,7 @@ right: 30px;
 .gallery{
     float: right;
     overflow: scroll;
-    top: 1660px;
+    top: 1460px;
     background-color: #c8dac2;
     padding: 20px;
     color: #043b34;
@@ -184,10 +184,4 @@ right: 30px;
 
 .galleryimg2 {
     height: 200px;
-}
-
-.funpng {
-    width: 100px;
-    float: right;
-    
 }
