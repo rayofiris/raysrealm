@@ -101,6 +101,8 @@ font-weight: normal;
 font-style: normal;
 } 
 
+
+
 p{
     font-family: 'unixel';
     font-size: 15px;
@@ -167,7 +169,7 @@ right: 30px;
 .gallery{
     float: right;
     overflow: scroll;
-    top: 1660px;
+    top: 1540px;
     background-color: #c8dac2;
     padding: 20px;
     color: #043b34;
