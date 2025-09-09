@@ -122,11 +122,13 @@ p{
     background-color: #dcd2a4;
     padding: 20px;
     color: #2c2112;
-    border: 4px solid #b5a274
+    border: 4px solid #b5a274;
+    border-radius: 7px;
 }
 .board1{
 width: 42%;
 border: 4px solid  #68a3c7;
+border-radius: 7px;
 background-color: #87cefa;
 background-image: url(img/wood-pattern.png);
 background-size: 50%;
@@ -141,6 +143,7 @@ top: 210px;
 {
 width: 42%;
 border: 4px solid  #68a3c7;
+border-radius: 7px;
 background-color: lightskyblue;
 background-image: url(img/wood-pattern.png);
 background-size: 50%;
@@ -175,6 +178,7 @@ right: 30px;
     padding: 20px;
     color: #2c2112;
     border: 4px solid #b5a274;
+    border-radius: 7px;
     width: 42%;
     right: 30px;
     position:absolute;
@@ -201,3 +205,155 @@ right: 30px;
     
 }
 
+
+#popup1 {
+    border: 4px solid gray;
+    background-color: white;
+    width: 300px; 
+    padding: 10px;
+    position: fixed;
+    top: 310px;
+    left: 400px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+#popup1 .show {
+    visibility: visible;
+}
+
+#popup2 {
+    border: 4px solid gray;
+    background-color: white;
+    width: 520px; 
+    padding: 10px;
+    position: fixed;
+    top: 30px;
+    right: 100px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+#popup3 {
+    border: 4px solid gray;
+    background-color: white;
+    width: 300px; 
+    padding: 10px;
+    position: fixed;
+    top: 80px;
+    left: 70px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+#popup4 {
+    border: 4px solid gray;
+    background-color: white;
+    width: 300px; 
+    padding: 10px;
+    position: fixed;
+    top: 190px;
+    right: 200px; 
+    z-index: 2;
+    visibility: hidden;
+}
+#popup4point5 {
+    border: 4px solid gray;
+    background-color: white;
+    width: 300px; 
+    padding: 10px;
+    position: fixed;
+    top: 290px;
+    right: 220px; 
+    z-index: 2;
+    visibility: hidden;
+}
+
+#popup5 {
+    border: 4px solid gray;
+    background-color: white;
+    width: 300px; 
+    padding: 10px;
+    position: fixed;
+    top: 80px;
+    left: 500px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+#popup6 {
+    border: 4px solid gray;
+    background-color: white;
+    width: 300px; 
+    padding: 10px;
+     padding-top: 5px;
+    position: fixed;
+    top: 370px;
+    left: 100px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+#popup7 {
+    border: 4px solid gray;
+    background-color: white;
+    width: 300px; 
+    padding: 10px;
+    padding-top: 5px;
+    position: fixed;
+    top: 100px;
+    right: 600px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+#popup8 {
+    border: 4px solid gray;
+    background-color: white;
+    width: 400px; 
+    padding: 10px;
+     padding-top: 5px;
+    position: fixed;
+    top: 150px;
+    left: 150px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+#popup9 {
+    border: 4px solid gray;
+    background-color: white;
+    width: 400px; 
+    padding: 10px;
+    position: fixed;
+    top: 340px;
+    right: 30px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.fi {
+    width: 100px;
+    float: left;
+}
+
+.dekubaba {
+    width: 100px;
+    float: right;
+}
+
+.shield {
+    width: 100px;
+    float: right;
+}
+
+.popuptxt {
+    color: black;
+}
+
+.button {
+    padding: 4px;
+    background-color: lightgrey;
+    border: 2px solid gray;
+    font-family: 'unixel';
+}
