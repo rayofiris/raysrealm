@@ -357,3 +357,9 @@ right: 30px;
     border: 2px solid gray;
     font-family: 'unixel';
 }
+
+.button:hover {
+background-color: lightskyblue;
+border-color: #68a3c7;
+color: #152935;
+}
