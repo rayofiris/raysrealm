@@ -1,0 +1,642 @@
+.waterfall {
+height: 300px;
+mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0), transparent);
+background-image: url(img/waterfall.jpg);
+background-size: 100%;
+background-repeat: repeat-x; 
+
+}
+
+.waterascii {
+height: 3000px;
+mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0), transparent);
+background-image: url(img/waterascii.png);
+background-size: 100%;
+background-repeat: repeat-y;
+
+}
+
+body {
+margin: 0;
+}
+
+@font-face {                  
+font-family: 'Aber-Mono';
+src: url(https://humantooth.neocities.org/fonts/Aber-Mono-Regular.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+@font-face {                  
+font-family: 'jgs7';
+src: url(https://humantooth.neocities.org/fonts/jgs7.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+.ascii {
+width: 70vw;
+margin: auto;
+}
+
+.imgcontainer {
+width: 70vw;
+margin: auto;
+}
+
+.basebox {
+display: flex;
+background-image: linear-gradient(to bottom, #0f5e9c, white);
+width: 33%;
+height: 3000px;
+margin: auto;
+gap: .25%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: absolute; 
+left: 33%;
+top: 25%;
+z-index: 1;
+
+}
+
+.divider {
+width: 100%;
+height: 12%;
+background-image: linear-gradient(to bottom, #0f5e9c, white);
+color: #0f5e9c;
+}
+
+.rhythmbox {
+position: absolute;
+top: 25%;
+left: 31.5%;
+z-index: 3;
+width: 33%;
+height: 3000px;
+margin: auto;
+display: flex;
+flex-direction: row;
+border: 2px; 
+padding: 2%;
+gap: 10px;
+
+}
+
+.note1 {
+width: 43%;
+height: 1%;
+background-color: white;
+color: white;
+position: absolute;
+top: 5.5%;
+left: 5%;
+border: 2px solid #5abcd8;
+}
+
+.note1:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note2 {
+width: 43%;
+height: 1%;
+background-color: black;
+color: black;
+position: absolute;
+top: 15%;
+right: 8%;
+border: 2px solid #5abcd8;
+}
+
+.note2:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note3 {
+width: 43%;
+height: 1%;
+background-color: white;
+color: white;
+position: absolute;
+top: 17.75%;
+left: 5%;
+border: 2px solid #5abcd8;
+}
+
+.note3:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note4 {
+width: 43%;
+height: 1%;
+background-color: white;
+color: white;
+position: absolute;
+top: 24%;
+left: 5%;
+border: 2px solid #5abcd8;
+}
+
+.note4:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note5 {
+width: 43%;
+height: 1%;
+background-color: black;
+color: black;
+position: absolute;
+top: 27.5%;
+right: 8%;
+border: 2px solid #5abcd8;
+}
+
+.note5:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note6 {
+width: 43%;
+height: 1%;
+background-color: white;
+color: white;
+position: absolute;
+top: 33.5%;
+left: 5%;
+border: 2px solid #5abcd8;
+}
+
+.note6:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note7 {
+width: 43%;
+height: 1%;
+background-color: black;
+color: black;
+position: absolute;
+top: 36%;
+right: 8%;
+border: 2px solid #5abcd8;
+}
+
+.note7:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note8 {
+width: 43%;
+height: 1%;
+background-color: black;
+color: black;
+position: absolute;
+top: 40.5%;
+right: 8%;
+border: 2px solid #5abcd8;
+}
+
+.note8:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note9 {
+width: 43%;
+height: 1%;
+background-color: white;
+color: white;
+position: absolute;
+top: 42.25%;
+left: 5%;
+border: 2px solid #5abcd8;
+}
+
+.note9:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note10 {
+width: 43%;
+height: 1%;
+background-color: black;
+color: black;
+position: absolute;
+top: 48.25%;
+right: 8%;
+border: 2px solid #5abcd8;
+}
+
+.note10:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note11 {
+width: 43%;
+height: 1%;
+background-color: white;
+color: white;
+position: absolute;
+top: 52%;
+left: 5%;
+border: 2px solid #5abcd8;
+}
+
+.note11:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note12 {
+width: 43%;
+height: 1%;
+background-color: white;
+color: white;
+position: absolute;
+top: 56%;
+left: 5%;
+border: 2px solid #5abcd8;
+}
+
+.note12:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note13 {
+width: 43%;
+height: 1%;
+background-color: black;
+color: black;
+position: absolute;
+top: 60.25%;
+right: 8%;
+border: 2px solid #5abcd8;
+}
+
+.note13:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note14 {
+width: 43%;
+height: 1%;
+background-color: white;
+color: white;
+position: absolute;
+top: 66.75%;
+left: 5%;
+border: 2px solid #5abcd8;
+}
+
+.note14:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note15 {
+width: 43%;
+height: 1%;
+background-color: black;
+color: black;
+position: absolute;
+top: 72.75%;
+right: 8%;
+border: 2px solid #5abcd8;
+}
+
+.note15:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note16 {
+width: 43%;
+height: 1%;
+background-color: black;
+color: black;
+position: absolute;
+top: 77.5%;
+right: 8%;
+border: 2px solid #5abcd8;
+}
+
+.note16:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note17 {
+width: 43%;
+height: 1%;
+background-color: white;
+color: white;
+position: absolute;
+top: 82.25%;
+left: 5%;
+border: 2px solid #5abcd8;
+}
+
+.note17:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note18 {
+width: 43%;
+height: 1%;
+background-color: black;
+color: black;
+position: absolute;
+top: 86.75%;
+right: 8%;
+border: 2px solid #5abcd8;
+}
+
+.note18:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.note19 {
+width: 43%;
+height: 1%;
+background-color: white;
+color: white;
+position: absolute;
+top: 91.25%;
+left: 5%;
+border: 2px solid #5abcd8;
+}
+
+.note19:hover {
+    background-color: #0f5e9c;
+    border: 2px solid #2389da;
+    color: #0f5e9c;
+}
+
+.star {
+    width: 100px;
+    height:100px;
+    background-image: linear-gradient( to top , black, white);
+    position: absolute;
+    top: 100px;
+    left: 310px;
+}
+
+.playbox {
+position: absolute;
+top: 25%;
+left: 31.5%;
+z-index: 2;
+width: 33%;
+height: 3000px;
+margin: auto;
+display: flex;
+flex-direction: row;
+border: 2px; 
+padding: 2%;
+gap: 10px;
+
+}
+
+.play1 {
+width: 43.5%;
+height: 5.5%;
+background-image: linear-gradient(to top, transparent, black);
+color: black;
+position: absolute;
+top: 0%;
+left: 5%;
+visibility: hidden;
+}
+
+.play2 {
+width: 43.5%;
+height: 15.5%;
+background-image: linear-gradient(to bottom, transparent, black);
+color: transparent;
+position: absolute;
+top: 0%;
+right: 8%;
+visibility: hidden;
+}
+
+.play3 {
+width: 43.5%;
+height: 12.5%;
+background-image: linear-gradient(to top, transparent, black);
+color: black;
+position: absolute;
+top: 6.5%;
+left: 5%;
+visibility: hidden;
+}
+
+.play4 {
+width: 43.5%;
+height: 5.5%;
+background-image: linear-gradient(to top, transparent, black);
+color: black;
+position: absolute;
+top: 18.5%;
+left: 5%;
+visibility: hidden;
+}
+
+.play5 {
+width: 43.5%;
+height: 12.5%;
+background-image: linear-gradient(to bottom, transparent, black);
+color: transparent;
+position: absolute;
+top: 16%;
+right: 8%;
+visibility: hidden;
+}
+
+.play6 {
+width: 43.5%;
+height: 9.5%;
+background-image: linear-gradient(to top, transparent, black);
+color: black;
+position: absolute;
+top: 24.5%;
+left: 5%;
+visibility: hidden;
+}
+
+.play7 {
+width: 43.5%;
+height: 8%;
+background-image: linear-gradient(to bottom, transparent, black);
+color: transparent;
+position: absolute;
+top: 28.5%;
+right: 8%;
+visibility: hidden;
+}
+
+.play8 {
+width: 43.5%;
+height: 3%;
+background-image: linear-gradient(to bottom, transparent, black);
+color: transparent;
+position: absolute;
+top: 38%;
+right: 8%;
+visibility: hidden;
+}
+
+.play9 {
+width: 43.5%;
+height: 8%;
+background-image: linear-gradient(to top, transparent, black);
+color: black;
+position: absolute;
+top: 34.5%;
+left: 5%;
+visibility: hidden;
+}
+
+.play10 {
+width: 43.5%;
+height: 8%;
+background-image: linear-gradient(to bottom, transparent, black);
+color: transparent;
+position: absolute;
+top: 41%;
+right: 8%;
+visibility: hidden;
+}
+
+.play11 {
+width: 43.5%;
+height: 10%;
+background-image: linear-gradient(to top, transparent, black);
+color: black;
+position: absolute;
+top: 42.5%;
+left: 5%;
+visibility: hidden;
+}
+
+.play12 {
+width: 43.5%;
+height: 3%;
+background-image: linear-gradient(to top, transparent, black);
+color: black;
+position: absolute;
+top: 52.5%;
+left: 5%;
+visibility: hidden;
+}
+
+.play13 {
+width: 43.5%;
+height: 12%;
+background-image: linear-gradient(to bottom, transparent, black);
+color: transparent;
+position: absolute;
+top: 49%;
+right: 8%;
+visibility: hidden;
+}
+
+.play14 {
+width: 43.5%;
+height: 11%;
+background-image: linear-gradient(to top, transparent, black);
+color: black;
+position: absolute;
+top: 56%;
+left: 5%;
+visibility: hidden;
+}
+
+.play15 {
+width: 43.5%;
+height: 12%;
+background-image: linear-gradient(to bottom, transparent, black);
+color: transparent;
+position: absolute;
+top: 61%;
+right: 8%;
+visibility: hidden;
+}
+
+.play16 {
+width: 43.5%;
+height: 4%;
+background-image: linear-gradient(to bottom, transparent, black);
+color: transparent;
+position: absolute;
+top: 74%;
+right: 8%;
+visibility: hidden;
+}
+
+.play17 {
+width: 43.5%;
+height: 15%;
+background-image: linear-gradient(to top, transparent, black);
+color: black;
+position: absolute;
+top: 67.5%;
+left: 5%;
+visibility: hidden;
+}
+
+.play18 {
+width: 43.5%;
+height: 9%;
+background-image: linear-gradient(to bottom, transparent, black);
+color: transparent;
+position: absolute;
+top: 78.5%;
+right: 8%;
+visibility: hidden;
+}
+
+.play19 {
+width: 43.5%;
+height: 9%;
+background-image: linear-gradient(to top, transparent, black);
+color: black;
+position: absolute;
+top: 82.5%;
+left: 5%;
+visibility: hidden;
+}
