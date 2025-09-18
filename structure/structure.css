@@ -18,7 +18,10 @@ background-repeat: repeat-y;
 
 body {
 margin: 0;
+font-family: monospace;
 }
+
+
 
 @font-face {                  
 font-family: 'Aber-Mono';
@@ -34,14 +37,27 @@ font-weight: normal;
 font-style: normal;
 } 
 
-.ascii {
-width: 70vw;
+.starfall {
+width: 33%; 
+height: 30px;
 margin: auto;
+background-image: url(stamps/sparkles3.gif);
+z-index: 2;
+position: absolute;
+top: 3300px;
+left: 33%;
+
 }
 
-.imgcontainer {
-width: 70vw;
+.starfall2 {
+width: 33%; 
+height: 30px;
 margin: auto;
+background-image: url(stamps/sparkles5.gif);
+z-index: 2;
+position: absolute;
+top: 20%;
+left: 33%
 }
 
 .basebox {
