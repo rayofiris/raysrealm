@@ -1,0 +1,190 @@
+body {
+    background-color: black;
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;  
+    background-image: url(img/stars.png);
+    background-size: 25%;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    transform: translateX(1.5%)
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.75);
+    }
+}
+
+.light1 {
+    background-image: radial-gradient(circle, white, white, lightgoldenrodyellow, black, black);
+    filter: blur(15px);
+    z-index: 2;
+    border-radius: 50%;
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    animation: pulse 2.5s infinite ease-in-out alternate;
+}
+
+.light2 {
+    background-image: radial-gradient(circle, white, white, lightgoldenrodyellow, black, black);
+    filter: blur(15px);
+    z-index: 2;
+    border-radius: 50%;
+    width: 60vh;
+    height: 60vh;
+    position: absolute;
+    top: 10%;
+    left: 16%;
+    animation: pulse 3s .5s infinite ease-in-out alternate;
+}
+
+.light3 {
+    background-image: radial-gradient(circle, white, white, lightgoldenrodyellow, black, black);
+    filter: blur(15px);
+    z-index: 2;
+    border-radius: 50%;
+    width: 28vh;
+    height: 28vh;
+    position: absolute;
+    top: 65%;
+    left: 3%;
+    animation: pulse 3s 1s infinite ease-in-out alternate;
+}
+
+.light4 {
+    background-image: radial-gradient(circle, white, white, lightgoldenrodyellow, black, black);
+    filter: blur(15px);
+    z-index: 2;
+    border-radius: 50%;
+    width: 25vh;
+    height: 25vh;
+    position: absolute;
+    top: 8%;
+    left: 55%;
+    animation: pulse 3s 1s infinite ease-in-out alternate;
+}
+
+.light5 {
+    background-image: radial-gradient( circle,white, white, lightgoldenrodyellow, black, black);
+    filter: blur(15px);
+    z-index: 2;
+    border-radius: 50%;
+    width: 45vh;
+    height: 45vh;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    animation: pulse 3s .75s infinite ease-in-out alternate;
+}
+
+.light6 {
+    background-image: radial-gradient(circle, white, white, lightgoldenrodyellow, black, black);
+    filter: blur(15px);
+    z-index: 2;
+    border-radius: 50%;
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    top: 70%;
+    left: 83%;
+    animation: pulse 3s 1s infinite ease-in-out alternate;
+}
+
+.light7 {
+    background-image: radial-gradient(circle, white, white, lightgoldenrodyellow,  black, black);
+    filter: blur(15px);
+    z-index: 2;
+    border-radius: 50%;
+    width: 35vh;
+    height: 35vh;
+    position: absolute;
+    top: 16%;
+    left: 77%;
+    animation: pulse 3s infinite ease-in-out alternate;
+}
+
+.rayicon {
+    z-index: 5;
+    background-image: url(img/rayicon2.png);
+    height: 102px;
+    width: 95px;
+    background-size: 100%;
+    position: absolute;
+    top: 3%;
+    left: 3.25%;
+    animation: move 30s infinite linear; 
+}
+
+@keyframes move {
+    0% {
+        left: 3.25%;
+        top: 3%; 
+    }
+
+    17% {
+       left: 70%;
+       top: 80%;
+    }
+
+    22.5% {
+        left: 90%;
+        top: 60% 
+    }
+
+    30.5% {
+        left: 75%;
+        top: 5%;
+    }
+
+    47% {
+        left:15%; 
+        top:90%;
+    }
+
+    51% {
+        left:3.25%;
+        top: 73%; 
+    }
+
+    66% {
+        left: 60%; 
+        top: 5%; 
+    }
+
+    76% {
+        left: 95%;
+        top: 57%; 
+    }
+
+    81% {
+        left: 80%;
+        top: 90%; 
+    }
+
+    100% {
+        left: 3.25%; 
+        top: 3%;
+    }
+}
+
+.star {
+    width: 10px;
+    height: 10px;
+    z-index: 6;
+    position: absolute;
+    top: 7%;
+    left: 18%;
+    opacity: 50%;
+}

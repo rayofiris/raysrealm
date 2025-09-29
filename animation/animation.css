@@ -1,0 +1,136 @@
+body {
+    background-color: lightblue;
+    box-sizing: border-box; 
+    margin: 0;
+}
+
+.square {
+background-color: slateblue;
+width: 200px;
+height: 200px;
+animation-name: test;
+animation-duration: 4s; 
+/* s= seconds; need a duration for animation to run */
+/* color fades from one to the other; after animation, it resets back to original color */
+animation-delay: 2s; 
+/* can also have negative delay; only effects the beginning of whole animation */
+animation-iteration-count: 2; 
+/* how many times it runs */
+animation-direction: alternate; 
+/* reverse: start at 100% and go to 0%
+alternate: forwards then backwards animation; alternate-reverse is vice-versa;*/
+animation-timing-function: ease;
+/* linear- straightforward movement
+ease- like a bezier curve, slowfastslow
+    ease-in: slowfast
+    east-out: fastslow
+cubic-bezier: (n, n, n, n,)- define your own values along curve*/
+animation-fill-mode: forwards;
+/*forwards- retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count) ex- after animation the square stays purple
+backwards- retains values based on first keyframe;
+both- forwards and backwards
+*/
+/* shorthand: animation: name duration timing-function delay iteration-count direction fill mode */
+}
+
+@keyframes test {
+ 0% {
+    background-color: seagreen;
+    width: 200px;
+ }
+
+ 100% {
+    background-color: rebeccapurple;
+    width: 600px;
+ }
+}
+
+.container {
+    background-color: beige;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle {
+    background-color: lightblue;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: lightblue;
+        transform: scale(1);
+    /*instead of transform you could also use scale: 1 */
+    }
+    100% {
+        background-color: bisque; 
+        transform: scale(1.25);
+    }
+}
+
+.box {
+    background-color: lightblue;
+    width: 15vw;
+    height: 15vw;
+    animation: spin 4s infinite linear ;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.mover {
+    background-color: lightblue;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: move 5s infinite linear;
+   
+}
+
+@keyframes move {
+    0% {
+        /*left: -150px;*/
+        transform: translate(-150px);
+      
+    }
+    
+    50% {
+       background-color: bisque;
+    }
+    
+    100% {
+        /*left: 100vw;*/
+        transform: translate(101vw);
+        
+    }
+}
+
+.changer {
+background-color: lightblue;
+width: 15vw;
+height: 15vw;
+transition: 3s;
+/*if you want only one specific part to transition/fade, put the name of the property next to the seconds
+or change multiple with [property time, property time, property time;]*/
+}
+
+.changer:hover{
+background-color: bisque;
+transform: rotate(45deg);
+border-radius: 50%;
+}
