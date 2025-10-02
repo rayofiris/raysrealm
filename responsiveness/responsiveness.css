@@ -1,0 +1,76 @@
+body {
+    background-color: plum;
+    box-sizing: border-box; 
+}
+
+img {
+    max-width: 100%;
+}
+
+
+    /*max-width: 700px; /* more responsive than width; changes w/ screen size but not wider than 700px;*/
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+header, .left, .center, .right, footer {
+border: 1px solid purple; 
+padding: 20px;
+background-color: lavender;
+}
+
+header, footer {
+    text-align: center;
+
+}
+
+header{
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.left, .right {
+    width: 25%;
+}
+
+.center {
+    width: 50%;
+}
+
+/*992 px- typical breakpoint for tablets; 600px- typical breakpoint for phones*/ 
+
+@media screen and (max-width: 992px) { 
+   
+   main {
+   flex-wrap: wrap;
+   }
+    .left {
+    width: 100%;
+   }
+
+   .center, .right {
+    width: 45%;   
+}
+
+
+}
+
+@media screen and (max-width: 800px) {
+   
+}
+
+@media screen and (max-width: 600px){ /*600px- typical breakpoint for phones; mobile first approach- going from smallest screen size to largest and using min-width instead of max-width*/ 
+    .center, .right {
+        width: 100%;
+    }
+}
