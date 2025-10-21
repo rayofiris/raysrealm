@@ -299,7 +299,7 @@ if ((sprite.x < 192) && (sprite.x > 96) && (sprite.y < 260) && (sprite.y > 195))
             
         }
               
-if ((sprite.x < 480) && (sprite.x > 384) && (sprite.y < 65) && (sprite.y > 0))
+if ((sprite.x < 384) && (sprite.x > 288) && (sprite.y < 65) && (sprite.y > 0))
         {
             blue1_4.style.visibility="visible";
             
