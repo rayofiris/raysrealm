@@ -19,7 +19,7 @@ window.addEventListener('load', function(){setTimeout(showPopuptwo,13000)});
 
 function showPopuptwo()
 {
-    let popup2= document.getElementById("popup2")
+    let popup2= document.getElementById("popup2");
     popup2.style.visibility="visible";
 }
 

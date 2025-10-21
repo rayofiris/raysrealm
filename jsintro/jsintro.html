@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title> boilerplate </title> 
+        <link rel="stylesheet" href="jsintro.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--
+        - javascript =/= java 
+        - javascript is one of the most popular programming languages
+        - console tab in dev tools (rightclick + inspect) is good for debugging
+        -->
+    <button onclick="change()">Click me...</button> <button onclick="glow()">glow</button>
+    <!-- onclick can be used on any html element (not just buttons)-->
+    <div class="menu">
+        hello world!
+    </div>
+    <div class="gear">
+
+    </div>
+
+     <script>
+        var menu = document.querySelector(".menu");
+        var gear = document.querySelector(".gear");
+        
+        function change() {
+        console.log('it works!');
+        menu.classList.toggle("active");
+        gear.classList.toggle("spin");
+        }
+        
+        function glow() {
+            menu.classList.toggle("glow");
+            gear.classList.toggle("glow");
+            document.body.classList.toggle("dark");
+        }
+    </script>
+    </body> 
+</html>

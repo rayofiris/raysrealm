@@ -1,0 +1,8 @@
+body {
+    background-color: lightblue;
+    box-sizing: border-box; 
+} 
+
+.main {
+    background-color: blue;
+}

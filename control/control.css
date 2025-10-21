@@ -1,0 +1,518 @@
+body {
+    box-sizing: border-box; 
+    margin: 0;
+    overflow: hidden;
+    image-rendering: pixelated;
+    text-align: center;
+}
+
+@font-face {                  
+font-family: 'AnalogueOS';
+src: url(https://humantooth.neocities.org/fonts/AnalogueOS-Regular.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+.header {
+    font-family: 'AnalogueOS';
+    font-size: 48px;
+    color: blue;
+    text-align: center;
+    margin: auto;
+    width: 490px;
+}
+
+
+canvas {
+    width: 480px;
+    height: 260px;
+    border: 10px solid black;
+    position: relative;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+.neck {
+    width: 100px;
+    height: 50px;
+    background-color: black;
+}
+
+.base1 {
+    width: 480px;
+    height: 10px;
+    background-color: black;
+}
+.base2 {
+    width: 490px;
+    height: 15px;
+    background-color: black;
+}
+
+.table {
+    width: 90vw;
+    height: 25%;
+    border: 5px solid black;
+    background-color: black;
+}
+
+.screencontainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.screen {
+    width: 480px;
+    height: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-content: flex-start;
+    top: -66px;
+    gap: 0px;
+}
+
+.blue1 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue1-2 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue1-3 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue1-4 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue1-5 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue2 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue2-2 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue2-3 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue2-4 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue2-5 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue3 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue3-2 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue3-3 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue3-4 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue3-5 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue4 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue4-2 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue4-3 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue4-4 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.blue4-5 {
+width: 96px;
+height: 65px;
+background-color: blue;
+visibility: hidden;
+}
+
+.xcontainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.xplace {
+    width: 480px;
+    height: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-content: flex-start;
+    top: -66px;
+    gap: 0px;
+} 
+
+.x1 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x1-2 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x1-3 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x1-4 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x1-5 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x2 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x2-2 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x2-3 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x2-4 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x2-5 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x3 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x3-2 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x3-3 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x3-4 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x3-5 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x4 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x4-2 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x4-3 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x4-4 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.x4-5 {
+width: 96px;
+height: 65px;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+display: flex;
+justify-content: center;
+align-items: visible;
+}
+
+.button {
+background-color: white;
+border: 6px solid blue;
+font-family: 'AnalogueOS';
+color: blue;
+font-size: 48px;
+text-align: center;
+padding: 10px 20px;
+text-decoration: none;
+cursor: pointer;
+}
+
+.buttoncontainer {
+position: absolute;
+left: 14%;
+top: 59.5%;
+z-index: 5;
+}
+
+.bigbluescreen {
+width: 100vw;
+height: 100vh;
+z-index: 10;
+background-color: blue;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+visibility: hidden;
+color: white;
+font-family: 'AnalogueOS';
+font-size: 48px;
+}
