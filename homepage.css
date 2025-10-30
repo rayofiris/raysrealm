@@ -20,7 +20,7 @@ font-style: normal;
 
 .header {
     font-family: 'AnalogueOS';
-    font-size: 5vh;
+    font-size: 36px;
     color: #8c4646;
 }
 
@@ -65,6 +65,8 @@ align-items: center;
     align-items: flex-start;
     justify-content: center;
     background-color: #ddd8ab;
+    width: 900px;
+    padding-top: 5px;
 }
 
 .triangle {
