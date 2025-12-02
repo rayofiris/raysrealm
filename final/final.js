@@ -236,10 +236,18 @@ if ((sprite.x > 300) && (sprite.x < 470) && (sprite.y > 460) && (sprite.y <= 500
 {
     let textFive = document.querySelector(".text5");
     textFive.style.visibility = "visible";
+    document.querySelector("li").addEventListener("click", showfivePointFive);
+    function showfivePointFive() 
+{
+    let fivepointfive = document.querySelector(".text5point5");
+    fivepointfive.style.visibility = "visible";
+}
 }
 else {
     let textFive = document.querySelector(".text5");
     textFive.style.visibility = "hidden";
+    let fivepointfive = document.querySelector(".text5point5");
+    fivepointfive.style.visibility = "hidden";
 }
 
 if ((sprite.x > 640) && (sprite.x < 790) && (sprite.y > 460) && (sprite.y <= 500)) 
@@ -323,7 +331,7 @@ if ((sprite.y <= 156) && (sprite.x >= 140) && (sprite.x <=190))
 if ((sprite.y <= 470) && (sprite.y >= 460) && (sprite.x >= 140) && (sprite.x <= 190))
 {
     bottomrow.src = "img/empty.png";
-    window.open ("file:///C:/Users/raybu/Desktop/research-prospectus/index.html","_self");
+    window.open ("https://rayofiris.github.io/crunchitbeta/","_self");
 }
 
 if ((sprite.y <= 472) && (sprite.y >= 462) && (sprite.x >= 940) && (sprite.x <= 990))
@@ -333,9 +341,13 @@ if ((sprite.y <= 472) && (sprite.y >= 462) && (sprite.x >= 940) && (sprite.x <= 
 }
 
 
+
+
     render();
 
 }
+
+
 
 
 let toprow = new Image();
